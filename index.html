@@ -19,7 +19,7 @@
     <div class="row align-items-center h-100">
       <div class="col-12 col-md-6">
         <section class="form-elegant">
-          <div class="card z-depth-2">
+          <form class="card z-depth-2">
 
             <div class="card-body mx-4">
               <div class="text-center">
@@ -61,7 +61,7 @@
                 <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Calcular Peso Ideal</button>
               </div>
             </div>
-          </div>
+          </form>
 
         </section>
       </div>
@@ -75,39 +75,32 @@
               </div>
 
               <div class="md-form">
-                <input type="number" id="personHeight" class="form-control">
-                <label for="personHeight">Altura</label>
+                <input type="number" id="bodyMass" class="form-control" disabled>
+                <label for="bodyMass">Índice de Masa Corporal</label>
               </div>
 
               <div class="md-form">
-                <input type="number" id="personWeight" class="form-control">
-                <label for="personWeight">Peso</label>
+                <input type="text" id="imcObtain" class="form-control" disabled>
+                <label for="imcObtain">Según este IMC obtenido, tiene</label>
               </div>
 
-              <div class="row pb-3">
-                <div class="col-12">
-                  <select class="mdb-select md-form">
-                    <option value="" disabled selected>Selecciona una opción</option>
-                    <option value="1">Mujer</option>
-                    <option value="2">Hombre</option>
-                  </select>
-                  <label>Género</label>
-                </div>
-
-                <div class="col-12">
-                  <select class="mdb-select md-form">
-                    <option value="" disabled selected>Selecciona una opción</option>
-                    <option value="1">Pequeña</option>
-                    <option value="2">Mediana</option>
-                    <option value="3">Grande</option>
-                  </select>
-                  <label>Constitución Física</label>
-                </div>
+              <div class="md-form">
+                <input type="number" id="recommendedMinimum" class="form-control" disabled>
+                <label for="recommendedMinimum">Mínimo Recomendado</label>
               </div>
 
-              <div class="text-center mb-3">
-                <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Calcular Peso Ideal</button>
+              <div class="md-form">
+                <input type="number" id="recommendedMaximum" class="form-control" disabled>
+                <label for="recommendedMaximum">Máximo Recomendado</label>
               </div>
+
+              <hr class="mt-5">
+
+              <div class="md-form">
+                <input type="number" id="idealWeight" class="form-control" disabled>
+                <label for="idealWeight">Cálculo Total de Peso Ideal</label>
+              </div>
+
             </div>
           </div>
 
