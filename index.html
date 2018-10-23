@@ -38,7 +38,7 @@
 
               <div class="row pb-3">
                 <div class="col-12">
-                  <select class="mdb-select md-form">
+                  <select class="mdb-select md-form" id="Genero">
                     <option value="" disabled selected>Selecciona una opción</option>
                     <option value="1">Mujer</option>
                     <option value="2">Hombre</option>
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="col-12">
-                  <select class="mdb-select md-form">
+                  <select class="mdb-select md-form" id="Constitucion">
                     <option value="" disabled selected>Selecciona una opción</option>
                     <option value="1">Pequeña</option>
                     <option value="2">Mediana</option>
@@ -58,7 +58,7 @@
               </div>
 
               <div class="text-center mb-3">
-                <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Calcular Peso Ideal</button>
+                <button onclick="ejecutar()" type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Calcular Peso Ideal</button>
               </div>
             </div>
           </form>
@@ -75,12 +75,12 @@
               </div>
 
               <div class="md-form">
-                <input type="number" id="bodyMass" class="form-control" disabled>
-                <label for="bodyMass">Índice de Masa Corporal</label>
+                <input type="number" id="bodyMass" class="form-control">
+                <label for="bodyMass" id="bodyMass">Índice de Masa Corporal</label>
               </div>
 
               <div class="md-form">
-                <input type="text" id="imcObtain" class="form-control" disabled>
+                <input type="text" id="imcObtain" class="form-control">
                 <label for="imcObtain">Según este IMC obtenido, tiene</label>
               </div>
 
@@ -97,7 +97,7 @@
               <hr class="mt-5">
 
               <div class="md-form">
-                <input type="number" id="idealWeight" class="form-control" disabled>
+                <input type="number" id="idealWeight" class="form-control">
                 <label for="idealWeight">Cálculo Total de Peso Ideal</label>
               </div>
 
@@ -108,7 +108,7 @@
       </div>
     </div>
   </div>
-
+  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
