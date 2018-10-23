@@ -33,7 +33,7 @@ function ejecutar() {
 	var bodyMass = document.getElementById('bodyMass');
 	bodyMass.value = imc;
 	var idealWeight = document.getElementById('idealWeight');
-	idealWeight.value = pesoideal;
+	idealWeight.value = Math.round(pesoideal * 100) / 100;;
 	var imcObtain = document.getElementById('imcObtain');
 	imcObtain.value = estado;
 
