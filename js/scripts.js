@@ -11,6 +11,7 @@ function ejecutar() {
 	var metro = altura / 100;
 	metrodoble = metro * metro;
 	var imc = peso / metrodoble;
+	var imc = Math.round(imc * 100) / 100;
 	var alturapeso = altura - 100;
 
 	if (genero == 1) {
