@@ -38,7 +38,7 @@
 
               <div class="row pb-3">
                 <div class="col-12">
-                  <select class="mdb-select md-form" id="Genero">
+                  <select class="mdb-select md-form" id="gender">
                     <option value="" disabled selected>Selecciona una opción</option>
                     <option value="1">Mujer</option>
                     <option value="2">Hombre</option>
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="col-12">
-                  <select class="mdb-select md-form" id="Constitucion">
+                  <select class="mdb-select md-form" id="physicalConstitution">
                     <option value="" disabled selected>Selecciona una opción</option>
                     <option value="1">Pequeña</option>
                     <option value="2">Mediana</option>
@@ -58,7 +58,8 @@
               </div>
 
               <div class="text-center mb-3">
-                <button onclick="ejecutar()" type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Calcular Peso Ideal</button>
+                <button onclick="ejecutar()" type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Calcular
+                  Peso Ideal</button>
               </div>
             </div>
           </form>
@@ -74,31 +75,41 @@
                 <h3 class="dark-grey-text mb-5 mt-3"><strong>Resultado</strong></h3>
               </div>
 
-              <div class="md-form">
-                <input type="number" id="bodyMass" class="form-control">
-                <label for="bodyMass" id="bodyMass">Índice de Masa Corporal</label>
+              <div class="md-form input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text md-addon pl-0">Índice de Masa Corporal:</span>
+                </div>
+                <input type="number" id="bodyMass" class="form-control border" disabled>
               </div>
 
-              <div class="md-form">
-                <input type="text" id="imcObtain" class="form-control">
-                <label for="imcObtain">Según este IMC obtenido, tiene</label>
+              <div class="md-form input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text md-addon pl-0">Según este IMC obtenido, tiene:</span>
+                </div>
+                <input type="text" id="imcObtain" class="form-control" disabled>
               </div>
 
-              <div class="md-form">
+              <div class="md-form input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text md-addon pl-0">Mínimo Recomendado:</span>
+                </div>
                 <input type="number" id="recommendedMinimum" class="form-control" disabled>
-                <label for="recommendedMinimum">Mínimo Recomendado</label>
               </div>
 
-              <div class="md-form">
+              <div class="md-form input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text md-addon pl-0">Máximo Recomendado:</span>
+                </div>
                 <input type="number" id="recommendedMaximum" class="form-control" disabled>
-                <label for="recommendedMaximum">Máximo Recomendado</label>
               </div>
 
               <hr class="mt-5">
 
-              <div class="md-form">
-                <input type="number" id="idealWeight" class="form-control">
-                <label for="idealWeight">Cálculo Total de Peso Ideal</label>
+              <div class="md-form input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text md-addon pl-0">Cálculo Total de Peso Ideal:</span>
+                </div>
+                <input type="number" id="idealWeight" class="form-control" disabled>
               </div>
 
             </div>
@@ -108,7 +119,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
