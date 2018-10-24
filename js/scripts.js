@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.mdb-select').materialSelect();
+	$('.mdb-select').materialSelect();
+	$('[data-toggle="tooltip"]').tooltip();
 });
 
 function ejecutar() {

@@ -27,3 +27,21 @@ body {
 .form-elegant .btn:hover {
     box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
 }
+
+.labels-align label {
+    top: 10px!important;
+    left: 6.5%!important;
+}
+
+.labels-align-bottom label {
+    top: 10px!important;
+}
+
+.labels-align-bottom .select-wrapper input.select-dropdown {
+    height: 36px;
+}
+
+.labels-align-select label {
+    top: -15px!important;
+    left: 3.5%!important;
+}

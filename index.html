@@ -7,7 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Calcula tu Peso Ideal</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/mdb.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -26,14 +27,22 @@
                 <h3 class="dark-grey-text mb-5 mt-3"><strong>Calcula tu Peso Ideal</strong></h3>
               </div>
 
-              <div class="md-form">
-                <input type="number" id="personHeight" class="form-control pl-0">
+              <div class="md-form input-group labels-align">
+                <div class="input-group-prepend" data-toggle="tooltip" title="Debe introducir la altura en cm. Por lo tanto, si usted midiese 1.70 m deberá introducir en la casilla 170.">
+                  <span class="input-group-text md-addon pl-0"><i class="fas fa-question-circle"></i></span>
+                </div>
+                <input type="number" id="personHeight" class="form-control">
                 <label for="personHeight">Altura (cm)</label>
               </div>
 
-              <div class="md-form mb-1">
-                <div class="row px-3">
-                  <div class="col-11 px-0">
+              <div class="md-form mb-1 input-group labels-align-bottom">
+                <div class="row pl-3 w-100">
+                  <div class="col-1 px-0">
+                    <div class="input-group-prepend" data-toggle="tooltip" title="Peso en kilogramos o libras que usted tiene ahora mismo.">
+                      <span class="input-group-text md-addon pl-0"><i class="fas fa-question-circle"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-10 col-md-9 col-lg-10 px-0">
                     <input type="number" id="personWeight" class="form-control">
                     <label for="personWeight">Peso</label>
                   </div>
@@ -46,18 +55,30 @@
                 </div>
               </div>
 
-              <div class="row pb-3">
-                <div class="col-12">
-                  <select class="mdb-select md-form" id="gender">
+              <div class="row mb-0 md-form input-group labels-align-select">
+                <div class="col-1">
+                  <div class="input-group-prepend" data-toggle="tooltip" title="Es importante que usted elija en el menú desplegable de la derecha si es usted hombre o mujer.">
+                    <span class="input-group-text md-addon pl-0"><i class="fas fa-question-circle"></i></span>
+                  </div>
+                </div>
+                <div class="col-11">
+                  <select class="mdb-select md-form my-0" id="gender">
                     <option value="" disabled selected>Selecciona una opción</option>
                     <option value="1">Mujer</option>
                     <option value="2">Hombre</option>
                   </select>
                   <label>Género</label>
                 </div>
+              </div>
 
-                <div class="col-12">
-                  <select class="mdb-select md-form" id="physicalConstitution">
+              <div class="row pb-3 md-form input-group labels-align-select">
+                <div class="col-1">
+                  <div class="input-group-prepend" data-toggle="tooltip" title="Introduzca su tipo de complexión según su tipo de musculatura y anchura de hombros y tronco.">
+                    <span class="input-group-text md-addon pl-0"><i class="fas fa-question-circle"></i></span>
+                  </div>
+                </div>
+                <div class="col-11">
+                  <select class="mdb-select md-form my-0" id="physicalConstitution">
                     <option value="" disabled selected>Selecciona una opción</option>
                     <option value="1">Pequeña</option>
                     <option value="2">Mediana</option>
